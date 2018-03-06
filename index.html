@@ -1,46 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <!--<meta name="viewport" content="Width=device-width, initial-scale=1.0">-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Don Moldenhauer</title>
-  </head>
-  <body>
-     
-    <!-- top banner -->
-    <header>
-        <!-- Name box -->
-        <section id="namebox">
-          <h1 >Don Moldenhauer</h1>
-        </section>
-        <!-- links -->
-        <nav>
-          <a href="index.html">About</a> |
-          <a href="portfolio.html">Portfolio</a> |
-          <a href="contact.html">Contact</a>
-        </nav> 
-    </header>
-    
-    <section id="mainsectionwrap">
-      <!-- Center Box Content -changes between pages -->
-      <section id="mainsection">
-        <h1 id="subtitle">About Me</h1>
 
-        <hr>
-         
-        <img src="assets/images/DMMPRofilePic.jpg" alt="Don's Picture" style="width:140px;height:auto">
-        
-        <p>Specialist differentiated by extensive experience interfacing with project teams, internal stakeholders, and external consumers in software, mobile applications, communications, and technology industries.  Portfolio of projects utilizing font- and back-end languages, responsive frameworks, databases, and best code practices.  Known for exceptional communication skills and ability to present ideas to non-technical audiences.</p>
-        <br>
-        <p>Collaborative problem solver, adept at recongizing problems and gathering the right team members to solve.  Effective liason between teams as a servant-leader.  Creative and critical thinker with strong work ethic, consistently producing high-quality work in time frame required.  Perserverant self-starter and self-aware learner.</p>
-        <br>
-      </section>
-    </section> 
-  
-    <!-- bottom banner -->
-    <footer>
-        Copyright &copy;
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>About | Don Moldenhauer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Don Moldenhauer</a>
+
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <div id="main-container" class="container">
+
+    <div class="row">
+      <div class="col-lg-7">
+
+        <section class="main-section">
+
+          <h1>About Me</h1>
+
+          <div class="row">
+            <div class="col-lg-12">
+
+              <img src="assets/images/DMMPRofilePic.jpg" class="auth-image" alt="Don's Picture">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <p>Specialist differentiated by extensive experience interfacing with project teams, internal stakeholders, and
+                external consumers in software, mobile applications, communications, and technology industries. Portfolio
+                of projects utilizing font- and back-end languages, responsive frameworks, databases, and best code practices.
+                Known for exceptional communication skills and ability to present ideas to non-technical audiences.</p>
+
+              <p>Collaborative problem solver, adept at recognizing problems and gathering the right team members to solve.
+                Effective liason between teams as a servant-leader. Creative and critical thinker with strong work ethic,
+                consistently producing high-quality work in time frame required. Perserverant self-starter and self-aware
+                learner.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <div class="col-lg-5">
+
+
+        <section class="main-section">
+
+          <h1>Connect With Me</h1>
+
+          <a href="https://dmoldenhauer.github.io"><img src="assets/images/githubIcon.png" class="social-icon" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/dmoldenhauer/"><img src="assets/images/linkedInIcon.png" class="social-icon" alt="GitHub"></a>
+          <a href="https://stackexchange.com/users/12691077/don-moldenhauer"><img src="assets/images/stackOverflowIcon1.png" class="social-icon" alt="GitHub"></a>
+
+
+
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      
+      Copyright &copy; 2018 Don Moldenhauer
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
