@@ -1,0 +1,47 @@
+.container {
+    background-image: url("../images/gray_jean.png");
+}
+
+section {
+   
+    margin-left: 10px;
+}
+
+.banner {
+    color: white;
+    background-color: blue;
+    width: auto;   
+}
+
+.instructions {
+    color: purple;
+    background-color: pink;
+}
+
+.numberDisplayBackground {
+    color: white;
+    background-color: blue;
+}
+
+.winsLosses {
+    color: navy;
+    background-color: cyan;
+}
+
+h1 {
+    font-size: 2em;
+    padding: auto;
+}
+
+.number {
+    font-size: 2em;
+}
+
+.scoreBackground, .counterBackground {
+    background-color: purple;
+    color: rgb(250, 118, 250);
+}
+
+.counter {
+    font-size: 2em;
+}
