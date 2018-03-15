@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tornado Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Shrikhand" rel="stylesheet">
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/tornadoTrivia.css" />
+    <!-- JavaScript File -->
+    <script src="assets/javascript/tornadoTrivia.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- top row that contains the title -->
+        <div class="row">
+            <div class="col-md-4 blankSpace">
+
+            </div>
+
+            <div class="col-md-8 title">
+                <h1>Tornado Trivia</h1>
+            </div>
+        </div>
+        
+        <!-- bottom row that contains the start button/quiz/done -->
+        <div class="row">
+            <div class="col-md-4 blankSpace">
+
+            </div>
+
+            <div class="col-md-8" id="quizBoard">
+                <div id="buttonHolder">
+                    <button type="button" id="startButton" class="btn btn-primary btn-lg">Start</button>
+                </div>
+
+                <div id="questions">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p id="displayTimeRemain"></p>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>Roughly, how many tornadoes hit the U.S. yearly?</p>
+                                <input class="incorrect" type="radio" name="tornadoes" value="12"> 12
+                                <input class="incorrect" type="radio" name="tornadoes" value="120"> 120
+                                <input class="correct" type="radio" name="tornadoes" value="1200"> 1200
+                                <input class="incorrect" type="radio" name="tornadoes" value="12000"> 12000
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>Average distance a tornado travels?</p>
+                                <input class="incorrect" type="radio" name="tornadoes" value="550 feet"> 550 feet
+                                <input class="correct" type="radio" name="tornadoes" value="3.5 miles"> 3.5 miles
+                                <input class="incorrect" type="radio" name="tornadoes" value="10 miles"> 10 miles
+                                <input class="incorrect" type="radio" name="tornadoes" value="30 miles"> 30 miles
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>In the Northern Hemisphere, most tornadoes rotate:</p>
+                                <input class="correct" type="radio" name="tornadoes" value="left to right"> left to right
+                                <input class="incorrect" type="radio" name="tornadoes" value="right to left"> right to left
+                                <input class="incorrect" type="radio" name="tornadoes" value="varies by season"> varies by season
+                                <input class="incorrect" type="radio" name="tornadoes" value="nobody knows"> nobody knows
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>What's the safest place to be during a tornado?</p>
+                                <input class="incorrect" type="radio" name="tornadoes" value="your car"> your car
+                                <input class="incorrect" type="radio" name="tornadoes" value="a stadium"> a stadium
+                                <input class="correct" type="radio" name="tornadoes" value="the basement"> the basement
+                                <input class="incorrect" type="radio" name="tornadoes" value="2nd floor"> 2nd floor
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>Scale used to estimate winds by tornado damage:</p>
+                                <input class="incorrect" type="radio" name="tornadoes" value="Saffir-Simpson Scale"> Saffir-Simpson Scale
+                                <input class="incorrect" type="radio" name="tornadoes" value="Storm Index"> Storm Index
+                                <input class="correct" type="radio" name="tornadoes" value="Enhanced Fujita Scale"> Enhanced Fujita Scale
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>Tornado forecasting was banned from official forecasts before 1950.</p>
+                                <input class="correct" type="radio" name="tornadoes" value="True"> True
+                                <input class="incorrect" type="radio" name="tornadoes" value="False"> False
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>Record month for most tornadoes since modern record keeping began:</p>
+                                <input class="incorrect" type="radio" name="tornadoes" value="May, 1950"> May, 1950
+                                <input class="incorrect" type="radio" name="tornadoes" value="June, 1965"> June, 1965
+                                <input class="incorrect" type="radio" name="tornadoes" value="July, 1971"> July, 1971
+                                <input class="correct" type="radio" name="tornadoes" value="April, 2011"> April, 2011
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="question">
+                                <p>1996 movie that featured Helen Hunt as a storm chaser researching tornadoes?</p>
+                                <input class="incorrect" type="radio" name="tornadoes" value="MegaStorm"> MegaStorm
+                                <input class="correct" type="radio" name="tornadoes" value="Twister"> Twister
+                                <input class="incorrect" type="radio" name="tornadoes" value="In Harm's Way"> In Harm's Way
+                                <input class="incorrect" type="radio" name="tornadoes" value="Tornado!"> Tornado!
+                            </form>
+                        </li>
+                    </ul>
+                    <br>
+                    <button type="button" id="endButton" class="btn btn-primary btn-lg">Done!</button>
+
+                </div>
+
+                <div id="results">
+                    <h2>Results</h2>
+                    <br>
+                    <p id="correctCountDisplay"></p>
+                    <br>
+                    <p id="incorrectCountDisplay"></p>
+                    <br>
+                    <p id="unansweredCountDisplay"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

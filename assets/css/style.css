@@ -4,8 +4,13 @@ body {
     line-height: 34px;
     color: #777;
     background-image: url("../images/gray_jean.png");
+   
   }
   
+.navbar.navbar-expand-sm.navbar-light.bg-light {
+  background-color: #fff;
+}
+
   * {
     box-sizing: border-box;
   }
