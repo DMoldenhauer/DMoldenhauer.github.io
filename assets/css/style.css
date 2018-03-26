@@ -7,10 +7,13 @@ body {
    
   }
   
-.navbar.navbar-expand-sm.navbar-light.bg-light {
+/* .navbar.navbar-expand-sm.navbar-light.bg-light {
   background-color: #fff;
-}
+} */
 
+.bg-light {
+  background-color: #fff!important;
+}
   * {
     box-sizing: border-box;
   }
