@@ -8,7 +8,7 @@
   <title>About | Don Moldenhauer</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-    
+
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -17,24 +17,27 @@
   <header id="masthead">
     <div class="container">
       <a href="index.html" id="logo">Don Moldenhauer</a>
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="justify-content-end collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav nav-pills">
+                  
+                      <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                  
+                      <a class="nav-item nav-link active" href="index.html">About</a>
+                  
+                      <a class="nav-item nav-link" href="https://www.linkedin.com/in/dmoldenhauer/" target="_blank">LinkedIn</a>
+                  
+                      <a class="nav-item nav-link" href="https://github.com/DMoldenhauer" target="_blank">GitHub</a>
+              
+                      <a class="nav-item nav-link" href="mailto:dmmoldenhauer@gmail.com" target="_blank">Email</a>
+          </div>
       </nav>
     </div>
   </header>
@@ -43,63 +46,86 @@
   <div id="main-container" class="container">
 
     <div class="row">
-      <div class="col-lg-7">
-
-        <section class="main-section">
-
-          <h1>About Me</h1>
-
-          <div class="row">
-            <div class="col-lg-12">
-
-              <img src="assets/images/DMMProfilePic.jpg" class="auth-image" alt="Don's Picture">
-            </div>
+      <div class="col-md-8 col-sm-12">
+        <div class="card" id="descCard">
+          <div class="card-header">
+            "Passion for Applying Technology to Communicate Clearly"
           </div>
 
-          <div class="row">
-            <div class="col-lg-12">
-              <p>Specialist differentiated by extensive experience interfacing with project teams, internal stakeholders, and
-                external consumers in software, mobile applications, communications, and technology industries. Portfolio
-                of projects utilizing font- and back-end languages, responsive frameworks, databases, and best code practices.
-                Known for exceptional communication skills and ability to present ideas to non-technical audiences.</p>
+          <div class="card-body">
+            <p class="card-text">
+              <img class="card-img-top headshot" src="assets/images/DMMProfilePic.jpg" alt="Don's Picture">
 
-              <p>Collaborative problem solver, adept at recognizing problems and gathering the right team members to solve.
-                Effective liason between teams as a servant-leader. Creative and critical thinker with strong work ethic,
-                consistently producing high-quality work in time frame required. Perserverant self-starter and self-aware
-                learner.</p>
-            </div>
+              <p>Full-stack web developer differentiated by extensive experience working with Agile project teams, internal
+                stakeholders, and external accounts in software, mobile applications, media communications, and IoT industries.
+                Known for exceptional communication skills and ability to present ideas to non-technical audiences. Experience
+                with MERN stack frameworks, JavaScript, HTML, and CSS to build projects serving as a team leader, front and
+                back-end developer.</p>
+
+              <p>Collaborative problem solver adept at recognizing issues and gathering right team members to solve. Effective
+                liaison between teams as servant-leader. Creative and critical thinker with strong work ethic, consistently
+                producing high-quality work in time frame required. Perseverant self-starter and self-aware learner. Excited
+                about taking the next step toward a well-rounded software career by combining knowledge acquired from experience
+                as a product manager/product owner and project manager with specific technical skills developed via the University
+                of Minnesota Coding Bootcamp certificate awarded May 18, 2018.
+              </p>
           </div>
-        </section>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+          <ul class="list-group">
+            <li class="list-group-item active">Professional Experience Highlights</li>
+            <li class="list-group-item">
+              <img class="checkmark" src="assets/images/checkmark.JPG">&ensp;Product Owner&ensp; |&ensp; Project Manager&ensp; |&ensp; Software Customer Service</li>
+            <li class="list-group-item">
+              <img class="checkmark" src="assets/images/checkmark.JPG">&ensp;Mobile Apps&ensp; |&ensp; Internet of Things (IoT)</li>
+            <li class="list-group-item">
+              <img class="checkmark" src="assets/images/checkmark.JPG">&ensp;Agile&ensp; |&ensp; Scrum&ensp; |&ensp; Global Teams</li>
+            <li class="list-group-item">
+              <img class="checkmark" src="assets/images/checkmark.JPG">&ensp;Meteorologist&ensp; |&ensp; Weather Data and Algorithms</li>
+          </ul>
+        </div>
+
+        <br>
+        <br>
 
       </div>
-      <div class="col-lg-5">
 
+      <div class="col-md-4 col-sm-6">
+        <ul class="list-group">
+          <li class="list-group-item active">Technologies</li>
+          <li class="list-group-item">
+            <img id="techPic" src="assets/images/tech.png" alt="tech">
+          </li>
+        </ul>
 
-        <section class="main-section">
+        <br>
+        <br>
 
-          <h1>Connect With Me</h1>
-
-          <a href="https://dmoldenhauer.github.io"><img src="assets/images/githubIcon.png" class="social-icon" alt="GitHub"></a>
-          <a href="https://www.linkedin.com/in/dmoldenhauer/"><img src="assets/images/linkedInIcon.png" class="social-icon" alt="GitHub"></a>
-          <a href="https://stackexchange.com/users/12691077/don-moldenhauer"><img src="assets/images/stackOverflowIcon1.png" class="social-icon" alt="GitHub"></a>
-
-
-
-        </section>
+        <ul class="list-group" id="tools">
+          <li class="list-group-item active">Tools</li>
+          <li class="list-group-item">
+            <img id="toolCard" src="assets/images/tools.png" alt="tools">
+          </li>
+        </ul>
       </div>
-
     </div>
+
+    <row>
+      <div class="col-md-12 bottomSpace">
+      </div>
+    </row>
+
   </div>
 
   <footer>
-    <div class="container">
-      
       Copyright &copy; 2018 Don Moldenhauer
-    </div>
   </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

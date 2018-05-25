@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio | Don Moldenhauer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -14,23 +17,26 @@
     <header id="masthead">
         <div class="container">
             <a href="index.html" id="logo">Don Moldenhauer</a>
+
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
+                    <div class="navbar-nav nav-pills">
+                        
+                            <a class="nav-item nav-link active" href="portfolio.html">Portfolio </a>
+                        
+                            <a class="nav-item nav-link" href="index.html">About</a>
+                        
+                            <a class="nav-item nav-link" href="https://www.linkedin.com/in/dmoldenhauer/" target="_blank">LinkedIn</a>
+                        
+                            <a class="nav-item nav-link" href="https://github.com/DMoldenhauer" target="_blank">GitHub</a>
+                     
+                            <a class="nav-item nav-link" href="mailto:dmmoldenhauer@gmail.com" target="_blank">Email</a>
                 </div>
             </nav>
         </div>
@@ -39,88 +45,314 @@
     <div id="main-container" class="container">
 
         <div class="row">
-            <div class="col-lg-7">
-
-                <section class="main-section">
-                    <h1>Portfolio</h1>
-
-                    <div class="work">
-                        <a href= psychic-game.html> <img src="assets/images/PsychicGame.PNG" alt="Psychic Game"></a>
-
-                        <h3>Psychic Game - JavaScript</h3>
-                    </div>
-                    <div class="work">
-                        <a href= crystalCollector.html> <img src="assets/images/crystalsCollector.PNG" alt="CrystalCollector Game"></a>
-
-                        <h3>CrystalsCollector Game - jQuery</h3>
-                    </div>
-                    <div class="work">
-                        <a href="tornadoTrivia.html"> <img src="assets/images/tornadoTrivia.png" alt="Tornado Trivia Game"></a>
-
-                        <h3>Tornado Triva Game - jQuery/Timer</h3>
-                    </div>
-                    <div class="work">
-                        <a href="GifTastic.html"><img src="assets/images/giftastic.png" alt="AJAX Project"></a>
-
-                        <h3>GifTastic - AJAX</h3>
-                    </div>
-                    <div class="work">
-                        <a href="train.html"><img src="assets/images/trains.png" alt="Train Scheduler Project"></a>
-
-                        <h3>Train Scheduler -moment.js/Firebase</h3>
-                    </div>
-                    <div class="work">
-                        <a href="homepage.html"><img src="assets/images/findingfido.png" alt="Finding Fido Project"></a>
-
-                        <h3>Group Project -APIs</h3>
-                    </div>
-                    <div class="work">
-                        <a href="Liri/liri.js"><img src="assets/images/liri.png" alt="Liri Node.js Project"></a>
-
-                        <h3>Liri -API/Node.js</h3>
+            <div class="col-md-4">
+                <div class="card" id="feature1Card">
+                    <div class="card-header">
+                        hoook.me
+                        
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks siteLinkL">
+                            <a href="http://www.hoook.me" target="_blank">Site</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm  portfolioLinksR">
+                            <a href="https://github.com/Team-Chocolate-Chip-Cookies/Hoooked" target="_blank">GitHub</a>
+                        </button>
                     </div>
 
-                    <div class="work">
-                        <a href="assets/BamazonREADME.md"><img src="assets/images/bamazon.png" alt="Bamazon mySQL Project"></a>
+                    <div class="card-body">
+                        <a href="http://www.hoook.me" target="_blank">
+                            <img class="card-img-top featuredThumbs" src="assets/images/hookme.jpg" alt="hoook.me website image">
+                        </a>
 
-                        <h3>Bamazon -mySQL/Node.js</h3>
+                        <div class="card-text">
+                            <p class="appBlurb">Challenge friends to experience a movie, book, game or music and post comments.</p>
+                            <hr> Full Stack App Featuring
+                            <span class="projectBullets">
+                                <ul>
+                                    <li>React</li>
+                                    <li>mySQL</li>
+                                    <li>MVC structure</li>
+                                </ul>
+                            </span>
+                            <hr> Group Project
+                            <span class="projectBullets">
+                                <ul>
+                                    <li>Team of 7</li>
+                                    <li>Peer programming</li>
+                                    <li>Remote collaboration</li>
+                                </ul>
+                            </span>
+                            <hr> What I did
+                            <span class="projectBullets">
+                                <ul>
+                                    <li>UI Design</li>
+                                    <li>Clickable Balsamiq prototype</li>
+                                    <li>Built React components</li>
+                                    <li>CSS styling for most of site</li>
+                                </ul>
+                            </span>
+                        </div>
                     </div>
-
-                </section>
-            </div>
-            <div class="col-lg-5">
-
-
-                <section class="main-section">
-
-                    <h1>Connect With Me</h1>
-
-                    <a href="https://dmoldenhauer.github.io">
-                        <img src="assets/images/githubIcon.png" class="social-icon" alt="GitHub">
-                    </a>
-                    <a href="https://www.linkedin.com/in/dmoldenhauer/">
-                        <img src="assets/images/linkedInIcon.png" class="social-icon" alt="GitHub">
-                    </a>
-                    <a href="https://stackexchange.com/users/12691077/don-moldenhauer">
-                        <img src="assets/images/stackOverflowIcon1.png" class="social-icon" alt="GitHub">
-                    </a>
-
-
-
-                </section>
+                </div>
             </div>
 
+            
+            <div class="col-md-4">
+                <div class="card" id="feature2Card">
+                    <div class="card-header">
+                        T-Trivia
+
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks siteLinkL">
+                            <a href="tornadoTrivia.html" target="_blank">Site</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksR" id="siteLinkR">
+                            <a href="https://github.com/DMoldenhauer/TriviaGame" target="_blank">GitHub</a>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="tornadoTrivia.html" target="_blank">
+                            <img class="card-img-top featuredThumbs" src="assets/images/tornadoTrivia.png" alt="hoook.me website image">
+                        </a>
+
+                        <div class="card-text">
+                            <p class="appBlurb">Beat the clock and answer questions about tornadoes. App keeps track of score.</p>
+                            <hr> Front-End App Featuring
+                            <span class="projectBullets">
+                                <ul>
+                                    <li>Bootstrap</li>
+                                    <li>jQuery</li>
+                                    <li>Timer</li>
+                                    <li>Mobile-reponsive design</li>
+                                </ul>
+                            </span>
+                            <hr> Individual Project
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card" id="feature3Card">
+                    <div class="card-header">
+                        GifTastic
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks siteLinkL">
+                            <a href="GifTastic.html" target="_blank">Site</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksR">
+                            <a href="https://github.com/DMoldenhauer/GifTastic" target="_blank">GitHub</a>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="GifTastic.html" target="_blank">
+                            <img class="card-img-top featuredThumbs" src="assets/images/giftastic.png" alt="hoook.me website image">
+                        </a>
+
+                        <div class="card-text">
+                            <p class="appBlurb">Grab gifs of any animal from giphy.com api. Click image to toggle animation.</p>
+                            <hr> Front-End App Featuring
+                            <span class="projectBullets">
+                                <ul>
+                                    <li>AJAX</li>
+                                    <li>jQuery</li>
+                                    <li>Bootstrap</li>
+                                    <li>Mobile-reponsive design</li>
+                                </ul>
+                            </span>
+                            <hr> Individual Project
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card projCard">
+                    <div class="card-header">
+                        Finding Fido &emsp;
+                        <span class="appBlurb">Search for a new pet from animal shelters.</span>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks">
+                            <a href="https://finding-fido-now.herokuapp.com/homepage.html" target="_blank">Site</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksR">
+                            <a href="https://github.com/casmith205/Finding-Fido" target="_blank">GitHub</a>
+                        </button>
+                    </div>
+
+                    <div class="card-body projCardBody">
+                        <a href="https://finding-fido-now.herokuapp.com/homepage.html" target="_blank">
+                            <img class="card-img-top smallThumbs" src="assets/images/findingfido.png" alt="Finding Fido Project">
+                        </a>
+
+                        <div class="card-text">
+                            <span class="projectBullets">
+                                <ul>
+                                    <br>
+                                    <li>Front-End App Featuring: &nbsp; Bootstrap, Google Maps API, Firebase, jQuery and
+                                        AJAX </li>
+                                    <li>Group Project: &nbsp; 4 team members</li>
+                                    <li>What I Did: &nbsp; Project management via Trello | Google Maps API AJAX calls and implementation</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="card projCard">
+                    <div class="card-header">
+                        Bamazon &emsp;
+                        <span class="appBlurb">Take orders-manage inventory.</span>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksL">
+                            <a href="https://drive.google.com/file/d/1u2KbER-NYHE7WMMQO9E9IPlFPPaR1957/view" target="_blank">Storefront Demo</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks">
+                            <a href="https://drive.google.com/file/d/1sVcfsLf_ihi6YbO1xTE9ZHOt27RwCcav/view" target="_blank">Manager's Demo</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksR">
+                            <a href="https://github.com/DMoldenhauer/Train-Scheduler" target="_blank">GitHub</a>
+                        </button>
+                    </div>
+
+                    <div class="card-body projCardBody">
+                        <a href="train.html" target="_blank">
+                            <img class="card-img-top smallThumbs" src="assets/images/bamazon.png" alt="Bamazon mySQL Project">
+                        </a>
+
+                        <div class="card-text">
+                            <span class="projectBullets">
+                                <ul>
+                                    <br>
+
+                                    <li>Back-End Project Featuring:&nbsp; node.js and mySQL </li>
+                                    <li>Individual Project</li>
+                                    <li>An Amazon-like storefront plus manager's version </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="card projCard">
+                    <div class="card-header">
+                        Train Scheduler &emsp;
+                        <span class="appBlurb">Schedule trains and see when the next one arrives.</span>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks">
+                            <a href="train.html" target="_blank">Site</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksR">
+                            <a href="https://github.com/DMoldenhauer/Train-Scheduler" target="_blank">GitHub</a>
+                        </button>
+                    </div>
+
+                    <div class="card-body projCardBody">
+                        <a href="train.html" target="_blank">
+                            <img class="card-img-top smallThumbs" src="assets/images/trains.png" alt="Train Scheduler Project">
+                        </a>
+
+                        <div class="card-text">
+                            <span class="projectBullets">
+                                <ul>
+                                    <br>
+
+                                    <li>Front-End Project Featuring:&nbsp; Bootstrap, Google Firebase, jQuery and moment.js </li>
+                                    <li>Individual Project</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="card projCard">
+                    <div class="card-header">
+                        CrystalsCollector &emsp;
+                        <span class="appBlurb">Boost memory skills with this game.</span>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks">
+                            <a href="crystalCollector.html" target="_blank">Site</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksR">
+                            <a href="https://github.com/DMoldenhauer/week-4-game" target="_blank">GitHub</a>
+                        </button>
+                    </div>
+
+                    <div class="card-body projCardBody">
+                        <a href="crystalCollector.html" target="_blank">
+                            <img class="card-img-top smallThumbs" src="assets/images/crystalsCollector.PNG" alt="CrystalCollector Game">
+                        </a>
+
+                        <div class="card-text">
+                            <span class="projectBullets">
+                                <ul>
+                                    <br>
+
+                                    <li>Front-End Project Featuring:&nbsp; Bootstrap and jQuery </li>
+                                    <li>Individual Project</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="card projCard">
+                    <div class="card-header">
+                        Psychic Game &emsp;
+                        <span class="appBlurb">Guess what letter the computer has generated.</span>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinks">
+                            <a href="psychic-game.html" target="_blank">Site</a>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm portfolioLinksR">
+                            <a href="https://github.com/DMoldenhauer/Psychic-Game" target="_blank">GitHub</a>
+                        </button>
+                    </div>
+
+                    <div class="card-body projCardBody">
+                        <a href="psychic-game.html" target="_blank">
+                            <img class="card-img-top smallThumbs" src="assets/images/PsychicGame.PNG" alt="Psychic Game">
+                        </a>
+
+                        <div class="card-text">
+                            <span class="projectBullets">
+                                <ul>
+                                    <br>
+
+                                    <li>Front-End Project Featuring:&nbsp; JavaScript </li>
+                                    <li>Individual Project</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
     </div>
 
+    <br>
+    <br>
+
     <footer>
-        <div class="container">
-            Copyright &copy; 2018 Don Moldenhauer
-        </div>
+        Copyright &copy; 2018 Don Moldenhauer
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
