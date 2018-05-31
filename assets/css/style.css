@@ -170,97 +170,95 @@ body {
     border: 2px solid white;
   }
 
-.bottomSpace {
-  height: 1000px;
-}
+  .bottomSpace {
+    height: 1000px;
+  }
 
-.featuredThumbs {
-  width: auto;
-  max-height: 209px;
-  margin-top: 5px;
-  margin-left: 1%;
-  margin-right: 1%;
-  margin-bottom: 20px;
-  border: 1px solid gray;
-  float: none;
+  .featuredThumbs {
+    width: auto;
+    max-height: 209px;
+    margin-top: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    float: none;
   
-}
+  }
 
-.smallThumbs {
-  width: auto;
-  height: 100px;
-  margin-top: 2px;
-  margin-left: 14px;
-  margin-right: 50px;
-  border: 1px solid gray;
+  .smallThumbs {
+    width: auto;
+    height: 100px;
+    margin-top: 2px;
+    margin-left: 14px;
+    margin-right: 50px;
+    border: 1px solid gray;
   
-}
+  }
 
-.portfolioLinksL {
-  position: absolute;
-  right:  250px;
-  height: 20px;
-  width: auto;
-  line-height: 10px;
-  margin-top:5px;
-}
-
-
-.portfolioLinks {
-  position: absolute;
-  right:  100px;
-  height: 20px;
-  width: auto;
-  line-height: 10px;
-  margin-top:5px;
-}
+  .portfolioLinksL {
+    position: absolute;
+    right:  250px;
+    height: 20px;
+    width: auto;
+    line-height: 10px;
+    margin-top:5px;
+  }
 
 
-.portfolioLinksR {
-  position: absolute;
-  right:  20px;
-  height: 20px;
-  width: auto;
-  line-height: 10px;
-  margin-top:5px;
-}
-
-.projectBullets {
-  font-size: smaller;
-}
+  .portfolioLinks {
+    position: absolute;
+    right:  100px;
+    height: 20px;
+    width: auto;
+    line-height: 10px;
+    margin-top:5px;
+  }
 
 
+  .portfolioLinksR {
+    position: absolute;
+    right:  20px;
+    height: 20px;
+    width: auto;
+    line-height: 10px;
+    margin-top:5px;
+  }
 
-.appBlurb {
-  font-style: italic;
-  font-size: small;
-}
+  .projectBullets {
+    font-size: smaller;
+  }
 
-#feature1Card {
-  height: 770px;
-}
+  .appBlurb {
+    font-style: italic;
+    font-size: small;
+  }
 
-#feature2Card {
-  height: 580px;
-}
+  #feature1Card {
+    height: 770px;
+  }
 
-#feature3Card {
-  height: 580px;
-}
+  #feature2Card {
+    height: 580px;
+  }
 
-.projCard {
-  height: 175px;
-}
+  #feature3Card {
+    height: 580px;
+  }
 
-.projCardBody {
-  padding: .5rem;
-}
+  .projCard {
+    height: 175px;
+  }
+
+  .projCardBody {
+    padding: .5rem;
+  }
 
 /* media queries */
 
 /* for mid sized screens (577 to 768 */
 
-@media only screen  and (max-width:768px) {
+@media only screen and (min-width:768px) and (max-width:991px)   {
 
   #logo {
    
@@ -292,7 +290,6 @@ body {
   .portfolioLinksL, .portfolioLinks, .portfolioLinksR {
    font-size: x-small;
   }
-
   
  .siteLinkL {
     position: absolute;
@@ -304,33 +301,30 @@ body {
   }
   
   
-.navbar-light, .navbar-toggler {
-  margin-top: 8px;  
-  position: relative;
-  right: 0px;
-}
+ .navbar-light, .navbar-toggler {
+   margin-top: 8px;  
+   position: relative;
+   right: 0px;
+ }
 
-.headshot {
-  width: 175px;
-}
+ .headshot {
+   width: 175px;
+ }
 
-#techPic, #toolCard {
-  width: 200px;
-}
+ #techPic, #toolCard {
+   width: 200px;
+ }
 
-#descCard {
-  height: 580px;
-}
+ #descCard {
+   height: 580px;
+ }
 
-body {
+ body {
   font-size: 14px;
+ }    
 }
 
-    
-  }
-
-@media only screen and (max-width:576px) {
-
+@media only screen and (min-width:576px) and (max-width:767px) {
 
   #logo {
    
@@ -377,7 +371,168 @@ body {
     top: -406px;
   }
 
-
-
+  .navbar {
+    margin-left:0px;
+  right: -60px;
+  top: -10px;
+     
+  } 
 }
 
+@media only screen and  (max-width:575px) {
+  #logo {
+   
+    width: 195px;
+    font-size: 20px;
+    margin-right: 0px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  #feature1Card, #feature2Card { 
+    margin-bottom: 50px;
+  }
+
+  #feature1Card {
+    height: 600px;
+  }
+
+  #feature2Card {
+    height: 460px;
+  }
+
+  #feature3Card {
+    height: 460px;
+  }
+  
+  .appBlurb {
+    display:none;
+  }
+
+  .portfolioLinksL {
+    position: absolute;
+    right:  250px;
+    height: 20px;
+    width: auto;
+    line-height: 10px;
+    margin-top:0px;
+  }
+  
+  
+  .portfolioLinks {
+    position: absolute;
+    right:  80px;
+    height: 20px;
+    width: auto;
+    line-height: 10px;
+    margin-top:0px;
+  }
+  
+  
+  .portfolioLinksR {
+    position: absolute;
+    right:  12px;
+    height: 20px;
+    width: auto;
+    line-height: 10px;
+    margin-top:0px;
+  }
+  
+  .card-header {
+    padding-left: 10px;
+  }
+
+  #store-front-bttn {
+    display: none;
+  }
+
+  .smallThumbs {
+    height: 209px;
+    max-width: 200px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-right: 10px;
+    padding-left: 10px;
+    float:left;
+    margin-bottom: 20px;
+  }
+
+  .projCard {
+    height: 450px;
+  }
+  
+  .featuredThumbs {
+    margin-bottom: 0px;
+    margin-left: 12%;
+  }
+
+  #fidoCard {
+    height: 370px;
+  }
+
+  #bamazonCard {
+    height: 350px;
+  }
+
+  #trainCard {
+    height: 350px;
+  }
+
+  #crystalCard {
+    height: 330px;
+  }
+
+  #psychicCard {
+    height: 330px;
+  }
+  .headshot {
+    width: 125px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  .navbar {
+    margin-left: 0px;
+    right: -70px;
+    top:-10px;
+  
+  }
+}
+
+@media only screen and  (max-width:374px) {
+  .featuredThumbs {
+    margin-bottom: 0px;
+    margin-left: 0%;
+    
+  }
+
+  .smallThumbs {
+    height: 209px;
+    max-width: 170px;
+    margin-left: 20%;
+    margin-right: 25%;
+    float:left;
+    margin-bottom: 20px;
+  }
+
+  #trainCard {
+    height: 350px;
+  }
+
+  #logo {
+    width: 190px;
+    font-size: 19px;
+    margin-right: 0px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+.navbar {
+  margin-left: 0px;
+  right: -15px;
+  top:-10px;
+
+  }
+}
